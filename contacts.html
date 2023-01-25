@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fintech Weezy</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+        <link rel="manifest" href="manifest.json">
+        </head>
+    <body>
+
+        <!-- ============ Main Container =========== -->
+    
+        <div class="main-container">
+    
+            <!-- ============ Side Navigation =========== -->  
+    
+            <div class="aside">
+           
+                
+               
+                <input type="checkbox" id="check">
+                  <span class="menu">
+                    <img src="images/logo.png" alt="logo" class="logo">
+                <ul class="nav">
+                    <li><a href="index.html" class="active"><i class="fa fa-home"></i>Home</a></li>
+                    <li><a href="about.html"><i class="fa fa-user"></i>About</a></li>
+                    <li><a href="academic.html"><i class="fa fa-graduation-cap"></i>Academic History</a></li>
+                    <li><a href="professional.html"><i class="fa fa-briefcase"></i>Professional History</a></li>
+                    <li><a href="testimonial.html"><i class="fa fa-comments"></i>Testimonials</a></li>
+                    <li><a href="skills.html"><i class="fa fa-cogs"></i>Skills</a></li>
+                    <li><a href="contacts.html"><i class="fa fa-phone"></i>Contacts</a></li>
+                </ul>
+
+                <div class="footer">
+                  <p>© Louisa Ijiwola</p>
+                  <p>fintechweezy@gmail.com</p> 
+              </div>
+                <label for="check" class="close-menu"><i class="fa fa-times"></i></label>
+              </span>
+              <label for="check" class="open-menu"><i class="fa fa-bars"></i></label>
+    
+              
+
+            
+        </div>
+        <!-- ============ Side Navigation =========== -->  
+    
+        <!-- ============ Contact =========== -->
+         <section class="contact section">
+            <div class="container">
+            <div class="section-title padd-15">
+                    <h2>Contact Me</h2>
+            </div>
+            
+    <div class="contact-page">
+
+            <div>
+                <h3 class="contact-title">Have an enquiry?</h3>
+                <h4 class="contact-sub-title">Please get in touch</h4>
+            </div>
+
+                <div class="contact-form">
+                    
+                        <div class="form-item">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                        </div>
+
+                        <div class="form-item">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+
+                    
+                        <div class="form-item">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Subject">
+                            </div>
+                        </div>
+                    
+
+                    
+                        <div class="form-item">
+                            <div class="form-group">
+                                <textarea name="" id="message" class="form-control" maxlength="500" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <div id="counter" class="counter"></div>
+    
+
+                    <div class="form-item">
+                        <div class="captcha-container row">
+                            <div class="captcha-inner-box">
+                                <input type="checkbox" class="checkbox">
+                            </div>
+                            <p>I'm not a robot</p>
+                            <img src="images/recaptcha.png" alt="recaptcha">
+                        </div>
+                    </div>
+                   
+                        <div class="form-item">
+                            <button type="submit" class="btn">Send Message</button>
+                        </div>
+                    
+
+                    </div>
+
+                </div>
+            
+    
+            </div>
+
+    </div>
+        </div>
+         </section>   
+
+
+
+        <!-- ============ Skills Ends =========== -->
+            </div>
+        </div>
+    <!-- ============ Main Container Ends =========== -->
+    <script>
+const messageCount = document.getElementById('message');
+const counterCount = document.getElementById('counter');
+
+messageCount.addEventListener('input', function (e) {
+    const target = e.target;
+
+    // Get the `maxlength` attribute
+    const maxLength = target.getAttribute('maxlength');
+
+    // Count the current number of characters
+    const currentLength = target.value.length;
+
+    counterCount.innerHTML = `${currentLength}/${maxLength}`;
+});
+        </script>
+      </body>
+    </html>
+
